@@ -24,3 +24,5 @@ Ok, modules loaded: Example.Interface.
 Hello from C++
 *Example.Interface> 
 ```
+
+I'm running this with ghci version 7.6.3  and gcc version 4.8.2.
