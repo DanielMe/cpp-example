@@ -1,0 +1,23 @@
+Name:           Example
+Version:        0.0.1
+Author:         Daniel Mescheder
+License:        GPL-3
+License-file:   LICENSE
+Maintainer:     Daniel Mescheder <mail@danielmescheder.de>
+Stability:      experimental
+Synopsis:       Just a toy example to play with the haskell-cpp interop
+Description:
+  Just a toy example to play with the haskell-cpp interop
+
+Category:      Example
+cabal-version: >= 1.4
+cabal-version:  >= 1.2
+build-type:     Simple
+
+library
+  Build-Depends:    base >= 4
+  Exposed-modules:  Example.Interface
+  Other-modules:    
+  -- include-dirs: 
+  -- ghc-options: -pgml g++ "-optl-Wl,--whole-archive" "-optl-Wl,-Bstatic" "-optl-Wl,-Bdynamic" "-optl-Wl,--no-whole-archive"
+  c-sources:        c/example_interface.cpp
